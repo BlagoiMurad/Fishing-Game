@@ -1,0 +1,72 @@
+:root {
+  --bg1: #06101c;
+  --bg2: #0b1a2e;
+  --panel: rgba(8, 16, 28, 0.84);
+  --text: #eaf3ff;
+  --accent: #57d2ff;
+  --accent2: #7dffb2;
+  --danger: #ff5a6a;
+  --warn: #ffd85a;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body { height: 100%; overflow: hidden; }
+
+body {
+  font-family: "Nunito", system-ui, -apple-system, sans-serif;
+  background:
+    radial-gradient(ellipse 120% 80% at 60% 10%, #0e2a4a 0%, transparent 60%),
+    radial-gradient(ellipse 80% 60% at 20% 80%, #0a1e30 0%, transparent 55%),
+    #060e1a;
+  color: var(--text);
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+canvas {
+  width: min(1200px, 96vw);
+  height: min(720px, 92vh);
+  border-radius: 20px;
+  box-shadow:
+    0 0 0 1px rgba(87, 210, 255, 0.12),
+    0 0 60px rgba(0, 0, 0, 0.70),
+    0 24px 80px rgba(0, 0, 0, 0.50),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+  outline: none;
+  display: block;
+}
+
+.hint {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(234, 243, 255, 0.50);
+  background: rgba(0, 0, 0, 0.30);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 999px;
+  backdrop-filter: blur(12px);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  letter-spacing: 0.02em;
+}
+
+kbd {
+  font: inherit;
+  padding: 1px 5px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  font-size: 11px;
+}
