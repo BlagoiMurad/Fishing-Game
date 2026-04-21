@@ -142,23 +142,3 @@ python -m http.server 8080
 ```
 
 Then open `http://localhost:8080`.
-
-## GitHub Pages Deployment (Placeholder)
-
-- Create a GitHub repository
-- Push this `game/` folder
-- Enable GitHub Pages (Settings → Pages)
-- Set the source to the branch/folder that contains `game/index.html`
-
-## Screenshot (Placeholder)
-
-- Add screenshots to `assets/images/` and reference them here.
-
-## Future Improvements
-
-- Add true ellipse-based pond collision for fish
-- Add more fish patterns (schooling, resting, fleeing)
-- Add unlockable lures and a small shop screen
-- Add visual “perfect hook” bonus and combo system
-- Add touch controls for mobile
-
